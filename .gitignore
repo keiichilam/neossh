@@ -1,0 +1,5 @@
+/target/
+/tests/unix-agent/target/
+/.qa/
+__pycache__/
+*.pyc

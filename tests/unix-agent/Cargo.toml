@@ -1,0 +1,18 @@
+[package]
+name = "ssh4-unix-agent-check"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+# Compile and run the real agent module without GUI/platform build dependencies.
+[lib]
+path = "../../src/agent.rs"
+
+[dependencies]
+base64 = "0.22"
+sha2 = "0.10"
+socket2 = { version = "0.4.10", features = ["all"] }
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = "3"
